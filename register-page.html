@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Responsive Registration Form | CodingLab </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <div id="logo">SmartSpend</div>
+
+  <div class="register-container">
+    
+    <div class="title">Registration</div>
+    <div class="content">
+      
+      <form action="process-signup.php" method="post" id="signup" enctype="multipart/form-data" novalidate>
+        <div class="user-details">
+          <div class="input-box">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+          </div>
+       
+          <div class="input-box">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email">
+          </div>
+        
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+          </div>
+
+          <div class="input-box">
+            <label for="password_confirmation">Repeat password</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
+        </div>
+
+        <select name="role">
+            <option value="admin">Admin</option>
+            <option value="customer">Customer</option>
+        </select>
+          
+        </div>
+
+            <label for="image">Upload Profile Image</label>
+            <input type="file" name="profile_image" accept="image/*" required>
+
+        <!-- Submit button -->
+        <div class="button">
+          <input type="submit" value="Register">
+        </div> 
+        <div class ="login-redirect">
+        <p>Already have an account? <a href="login_page.php">Log in</a></p>
+        </div>
+      </form>
+    </div>
+  </div> 
+
+   
+</body>
+</html>
